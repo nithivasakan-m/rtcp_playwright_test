@@ -1,0 +1,11 @@
+<suite name="MySuite">
+  <test name="Examples">
+    <parameter name="username" value="nithivasakan"/>
+    <parameter name="password" value="Nithitest"/>
+    <parameter name="filepath" value="/RTCPlatform/src/main/resources/rtcplatform.properties"/>
+    <parameter name="hello" value="world"/>
+    <classes>
+      <class name="com.DemoTest"/>
+    </classes>
+  </test>
+</suite>
