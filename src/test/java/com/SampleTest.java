@@ -113,8 +113,8 @@ public class SampleTest {
     @Test(priority = 6, dependsOnMethods = {"startMeeting"})
     public void endMeeting()
     {
-        boolean clicked = click("//*[@purpose='endConference']");
-        Assert.assertTrue(clicked, "Failed to end meeting");
+        
+        Assert.assertTrue(click("//*[@purpose='endConference']"), "Failed to end meeting");
         System.out.println("[endMeeting] Meeting ended successfully");
         takeScreenshot("After Meeting Ended");
     }
